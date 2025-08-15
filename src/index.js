@@ -39,6 +39,9 @@ app.get("/french", (req, res) => {
     return res.json({message: "Bonjour"});
 })
 
+app.get("/spanish", (req, res) => {
+    return res.json({message: "Hola, Mundo!"});
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
